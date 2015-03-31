@@ -16,8 +16,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+       
+        self.setupParse()
+        
+        self.setupAppAppereance();
+        
+        
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var navigationController = UINavigationController()
+        var startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
+//        startViewController.view.backgroundColor = UIColor.yellowColor()
+        
+        if PFUser.currentUser() == nil {
+            
+            navigationController.viewControllers = [startViewController]
+            
+        }
+        
+        else {
+            
+            println("we have a user")
+        }
+
+        
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
+        
+    
+        
+        
         return true
+        
+        }
+        
+        func setupParse() {
+            
+            Parse.setApplicationId("xpvO4TW1OZSzsea7ciH8x2Mq51urGdzOfvbfxelL", clientKey: "ny8f4MmR4HuHPBGCTUVGBS2QzTjdIwqBSaJ3Wpn7")
+//            var testObject = PFObject(className: "TestObject")
+//            testObject["foo"] = "bar"
+//            testObject.save()
+            }
+    
+    func setupAppAppereance()
+    {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     }
+    
+        
+    
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

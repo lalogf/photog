@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="Photog" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CXl-fn-jjV">
+                    <rect key="frame" x="0.0" y="-67" width="600" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFS-47-cUl">
+                    <rect key="frame" x="10" y="557" width="580" height="33"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="Y9b-UD-fRf"/>
+                    </constraints>
+                    <state key="normal" title="Sign in">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="j7u-T3-fdt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve7-ch-U6C">
+                    <rect key="frame" x="10" y="514" width="580" height="33"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="Ha8-Yb-MqA"/>
+                    </constraints>
+                    <state key="normal" title="Sign up">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignUp:" destination="-1" eventType="touchUpInside" id="3OR-Rq-IBD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KFS-47-cUl" secondAttribute="bottom" constant="10" id="JGK-ml-Adf"/>
+                <constraint firstAttribute="bottom" secondItem="CXl-fn-jjV" secondAttribute="bottom" id="JJO-0u-80o"/>
+                <constraint firstItem="KFS-47-cUl" firstAttribute="top" secondItem="Ve7-ch-U6C" secondAttribute="bottom" constant="10" id="Kds-3C-jc8"/>
+                <constraint firstItem="CXl-fn-jjV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YMt-6J-6mK"/>
+                <constraint firstAttribute="trailing" secondItem="Ve7-ch-U6C" secondAttribute="trailing" constant="10" id="d6d-h0-gp7"/>
+                <constraint firstItem="KFS-47-cUl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="k4e-tf-Cor"/>
+                <constraint firstAttribute="trailing" secondItem="KFS-47-cUl" secondAttribute="trailing" constant="10" id="mv4-x9-ExS"/>
+                <constraint firstItem="CXl-fn-jjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oPi-iG-WgW"/>
+                <constraint firstAttribute="trailing" secondItem="CXl-fn-jjV" secondAttribute="trailing" id="pob-fH-kbe"/>
+                <constraint firstItem="Ve7-ch-U6C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="sGD-TQ-12I"/>
+            </constraints>
+            <point key="canvasLocation" x="55" y="358"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="StartViewControllerBackground" width="640" height="960"/>
+    </resources>
+</document>
