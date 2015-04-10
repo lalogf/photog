@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EE7A14CF-1259-45D0-BE31-4BDE7B5AD808</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Photog</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>63FC22AF8CC6A26B4991D75441634283F887C41D</key>
+		<string>https://github.com/lalogf/photog.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Photog.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>63FC22AF8CC6A26B4991D75441634283F887C41D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lalogf/photog.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>63FC22AF8CC6A26B4991D75441634283F887C41D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>63FC22AF8CC6A26B4991D75441634283F887C41D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Photog</string>
+		</dict>
+	</array>
+</dict>
+</plist>

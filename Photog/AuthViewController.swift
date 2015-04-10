@@ -115,12 +115,43 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     
     func SignIn(email: String, password:String)
     {
-        println("sign in")
+        PFUser.logInWithUsernameInBackground(email, password: password)
+            {
+                (user: PFUser!, error: NSError!) -> Void in
+                
+                if (user != nil)
+                {
+                    var tabBarController = TabBarController()
+                    self.navigationController?.pushViewController(tabBarController, animated: true)
+                }
+                else
+                {
+                    println("sign in failure, alert the user")
+                }
+            }
     }
     
     func SignUp(email: String, password:String)
     {
-        println("sign up")
+        var user = PFUser()
+        user.username = email
+        user.email = email
+        user.password = password
+        
+        user.signUpInBackgroundWithBlock
+            {
+                (succeeded: Bool!, error: NSError!) -> Void in
+                
+                if error == nil
+                {
+                    var tabBarController = TabBarController()
+                    self.navigationController?.pushViewController(tabBarController, animated: true)
+                }
+                else
+                {
+                    println("sign up failure, alert the user!")
+                }
+            }
     }
     
 

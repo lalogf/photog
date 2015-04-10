@@ -29,15 +29,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
 //        startViewController.view.backgroundColor = UIColor.yellowColor()
         
-        if PFUser.currentUser() == nil {
+        if PFUser.currentUser() == nil
+        {
             
             navigationController.viewControllers = [startViewController]
             
         }
         
-        else {
+        else
+        {
             
-            println("we have a user")
+            var tabBarController = TabBarController()
+            navigationController.viewControllers = [startViewController, tabBarController]
         }
 
         
@@ -65,6 +68,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.blackColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
+        
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
     }
     
         
