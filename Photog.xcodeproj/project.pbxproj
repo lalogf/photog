@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A427B1E1AE5563B00A1358C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A427B1C1AE5563B00A1358C /* Bolts.framework */; };
+		4A427B1F1AE5563B00A1358C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A427B1D1AE5563B00A1358C /* Parse.framework */; };
 		4A490A1E1AD48ECF007C625F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A490A1D1AD48ECF007C625F /* TabBarController.swift */; };
 		4A6AC8E31AAA11B70021E425 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6AC8E21AAA11B70021E425 /* AudioToolbox.framework */; };
 		4A6AC8E51AAA11C20021E425 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6AC8E41AAA11C20021E425 /* CFNetwork.framework */; };
@@ -27,8 +29,6 @@
 		4ACDC40E1AA8AEA1003AC3B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ACDC40D1AA8AEA1003AC3B8 /* Images.xcassets */; };
 		4ACDC4111AA8AEA1003AC3B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACDC40F1AA8AEA1003AC3B8 /* LaunchScreen.xib */; };
 		4ACDC41D1AA8AEA1003AC3B8 /* PhotogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACDC41C1AA8AEA1003AC3B8 /* PhotogTests.swift */; };
-		4AD6E9801ACB37C90073F413 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD6E97E1ACB37C90073F413 /* Bolts.framework */; };
-		4AD6E9811ACB37C90073F413 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD6E97F1ACB37C90073F413 /* Parse.framework */; };
 		4AD6E9841ACB3DD30073F413 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6E9831ACB3DD30073F413 /* String+Extensions.swift */; };
 		4AD6E9861ACB46BB0073F413 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6E9851ACB46BB0073F413 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -44,9 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A427B1C1AE5563B00A1358C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../parse-library-1.7.1/Bolts.framework"; sourceTree = "<group>"; };
+		4A427B1D1AE5563B00A1358C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../parse-library-1.7.1/Parse.framework"; sourceTree = "<group>"; };
 		4A490A1D1AD48ECF007C625F /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		4A6AC8DE1AAA11550021E425 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../parse-library-1.6.4/Bolts.framework"; sourceTree = "<group>"; };
-		4A6AC8DF1AAA11550021E425 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../parse-library-1.6.4/Parse.framework"; sourceTree = "<group>"; };
+		4A6AC8DE1AAA11550021E425 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../parse-library-1.7.1/Bolts.framework"; sourceTree = "<group>"; };
+		4A6AC8DF1AAA11550021E425 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../parse-library-1.7.1/Parse.framework"; sourceTree = "<group>"; };
 		4A6AC8E21AAA11B70021E425 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4A6AC8E41AAA11C20021E425 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4A6AC8E61AAA11CF0021E425 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,8 +73,6 @@
 		4ACDC4161AA8AEA1003AC3B8 /* PhotogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACDC41B1AA8AEA1003AC3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ACDC41C1AA8AEA1003AC3B8 /* PhotogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotogTests.swift; sourceTree = "<group>"; };
-		4AD6E97E1ACB37C90073F413 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../parse-library-1.7.0/Bolts.framework"; sourceTree = "<group>"; };
-		4AD6E97F1ACB37C90073F413 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../parse-library-1.7.0/Parse.framework"; sourceTree = "<group>"; };
 		4AD6E9831ACB3DD30073F413 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		4AD6E9851ACB46BB0073F413 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,10 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD6E9801ACB37C90073F413 /* Bolts.framework in Frameworks */,
-				4AD6E9811ACB37C90073F413 /* Parse.framework in Frameworks */,
 				4A6AC8F71AAA12170021E425 /* libsqlite3.dylib in Frameworks */,
 				4A6AC8F51AAA120E0021E425 /* libz.dylib in Frameworks */,
+				4A427B1F1AE5563B00A1358C /* Parse.framework in Frameworks */,
 				4A6AC8F31AAA11FB0021E425 /* SystemConfiguration.framework in Frameworks */,
 				4A6AC8F11AAA11F20021E425 /* StoreKit.framework in Frameworks */,
 				4A6AC8EF1AAA11EB0021E425 /* Security.framework in Frameworks */,
@@ -95,6 +94,7 @@
 				4A6AC8E71AAA11CF0021E425 /* CoreGraphics.framework in Frameworks */,
 				4A6AC8E51AAA11C20021E425 /* CFNetwork.framework in Frameworks */,
 				4A6AC8E31AAA11B70021E425 /* AudioToolbox.framework in Frameworks */,
+				4A427B1E1AE5563B00A1358C /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +141,8 @@
 		4ACDC3F81AA8AEA1003AC3B8 = {
 			isa = PBXGroup;
 			children = (
-				4AD6E97E1ACB37C90073F413 /* Bolts.framework */,
-				4AD6E97F1ACB37C90073F413 /* Parse.framework */,
+				4A427B1C1AE5563B00A1358C /* Bolts.framework */,
+				4A427B1D1AE5563B00A1358C /* Parse.framework */,
 				4A6AC8F61AAA12170021E425 /* libsqlite3.dylib */,
 				4A6AC8F41AAA120E0021E425 /* libz.dylib */,
 				4ACDC4031AA8AEA1003AC3B8 /* Photog */,
@@ -435,6 +435,7 @@
 					"$(inherited)",
 					"/Users/lalogf/Desktop/onemonthios/parse-library-1.6.4",
 					"/Users/lalogf/Documents/onemonthios/parse-library-1.7.0",
+					"/Users/lalogf/Documents/onemonthios/parse-library-1.7.1",
 				);
 				INFOPLIST_FILE = Photog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -453,6 +454,7 @@
 					"$(inherited)",
 					"/Users/lalogf/Desktop/onemonthios/parse-library-1.6.4",
 					"/Users/lalogf/Documents/onemonthios/parse-library-1.7.0",
+					"/Users/lalogf/Documents/onemonthios/parse-library-1.7.1",
 				);
 				INFOPLIST_FILE = Photog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
