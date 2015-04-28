@@ -147,8 +147,20 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
                 
                 if error == nil
                 {
-                    var tabBarController = TabBarController()
-                    self.navigationController?.pushViewController(tabBarController, animated: true)
+                    // New user follows himself
+                    NetworkManager.sharedInstance.follow(user, completionHandler:{
+                        (error) -> () in
+                    
+                        if error == nil
+                        {
+                            var tabBarController = TabBarController()
+                            self.navigationController?.pushViewController(tabBarController, animated: true)
+                        }
+                        else
+                        {
+                            println("Unable for user to follow himself")
+                        }
+                    })
                 }
                 else
                 {
@@ -156,6 +168,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
                 }
             }
     }
+
     
 
 

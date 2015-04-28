@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EE7A14CF-1259-45D0-BE31-4BDE7B5AD808</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Photog</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>63FC22AF8CC6A26B4991D75441634283F887C41D</key>
 		<string>https://github.com/lalogf/photog.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Photog.xcodeproj</string>
+	<string>Photog.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>63FC22AF8CC6A26B4991D75441634283F887C41D</key>
